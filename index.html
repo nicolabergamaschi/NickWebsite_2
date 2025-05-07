@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Goggle Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- JS files -->
+    <script src="clist.js"></script>
+    
+    <title>Nicola Bergamaschi</title>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="overlay">
+        <!-- ! BOTTOM PANE-->
+        <div class="content-container">
+          <ul id="menu" class="collapsible">
+            <li id="head-list">
+              <a href="#carouselExampleDarkAi" class="collapsible-text"><h5>Ai</h5></a>
+              <ul id="sub-list">
+                <li><a id="ai-Experiments" class="sub-list-link" href="#carouselExampleDarkAi">Experiments</a></li>
+                <li><a id="ai-Vogue" class="sub-list-link" href="#carouselExampleDarkAi">Vogue</a></li>
+                <li><a id="ai-Rombaut"class="sub-list-link" href="#carouselExampleDarkAi">Rombaut</a></li>
+              </ul>
+            </li>
+            <li id="head-list">
+              <a href="#carouselExampleDarkCgi" class="collapsible-text"><h5>Cgi</h5></a>
+              <ul id="sub-list">
+                <li><a id="cg-exp" class="sub-list-link" href="#carouselExampleDarkCgi">Experiments</a></li>
+                <li><a id="cg-rol" class="sub-list-link" href="#carouselExampleDarkCgi">Rolex</a></li>
+                <li><a id="cg-dmp" class="sub-list-link" href="#carouselExampleDarkCgi">Digital Matte</a></li>
+                <li><a id="cg-lanvin"class="sub-list-link" href="#carouselExampleDarkCgi">Lanvin</a></li>
+              </ul>
+            </li>
+            <li id="head-list">
+              <a href="#carouselExampleDarkPhoto" class="collapsible-text"><h5>Photo</h5></a>
+              <ul id="sub-list">
+                <li><a id="ph-vital" class="sub-list-link" href="#carouselExampleDarkPhoto">Vital Signs</a></li>
+                <li><a id="ph-personal" class="sub-list-link" href="#carouselExampleDarkPhoto">Personal</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="content-container prj-description">
+          <div data-prj="ai-Vogue">
+            <h4 class="title">VOGUE</h4>
+            <p class="text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti ut soluta, eos aut<br> labore nemo impedit! Alias aut temporibus, officiis, rem iusto officia, sunt facilis quam aperiam tempore quos.</p>
+          </div>
+          <div data-prj="ai-Rombaut">
+            <h4 class="title">Rombaut</h4>
+            <p class="text-description paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti ut soluta, eos aut<br> labore nemo impedit! Alias aut temporibus, officiis, rem iusto officia, sunt facilis quam aperiam tempore quos.</p>
+          </div>
+          <div data-prj="ai-Experiments">
+            <h4 class="title">Experiments</h4>
+            <p class="text-description paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti ut soluta, eos aut<br> labore nemo impedit! Alias aut temporibus, officiis, rem iusto officia, sunt facilis quam aperiam tempore quos.</p>
+          </div>
+          <div data-prj="cg-dmp">
+            <h4 class="title">Digital Matte Painting</h4>
+            <p class="text-description paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti ut soluta, eos aut<br> labore nemo impedit! Alias aut temporibus, officiis, rem iusto officia, sunt facilis quam aperiam tempore quos.</p>
+          </div>
+        </div>
+      </div>
+      <!-- ! TOP PANE-->
+      <div class="container-top">
+        <div class="name top-bar-elements">
+          <a href="#page-home"><h3 class="my-name">Nicola Bergamaschi</h3></a>
+        </div>
+        <div class="mid-content top-bar-elements"></div>
+        <div class="page-options top-bar-elements">
+          <a href="#page-about"><h3 id="about" class="my-name">About</h3></a>
+        </div>
+      </div>
+      <!-- ! THIS IS THE BEGINING OF THE CAROUSEL SECTION-->
+      <div class="carousel-container central-pane">
+        <!-- ! Page HOME -->
+        <div id="page-home" class="carousel carousel-dark carousel-home" data-bs-pause="false">
+          <h1>Research&<br>Development&<br>Creativity.</h1>
+        </div>
+        <!-- ! Carousel AI -->
+        <div id="carouselExampleDarkAi" class="carousel carousel-dark" data-bs-pause="false">
+          <div class="carousel-button-container-prev">
+            <button id="prev" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDarkAi" data-bs-slide="prev"></button>
+          </div>
+          <div class="carousel-button-container-next">
+            <button id="next" class="carousel-control-next" type="button" data-bs-target="#carouselExampleDarkAi" data-bs-slide="next"></button>
+          </div>
+          
+          <div class="carousel-inner">
+            <div id="ai-Vogue" class="carousel-item ai active">
+              <img src="./resources/images/AI/AI_02.png" id="ai-Vogue" class="d-block" data-index="1" data-hover="ai-Vogue" alt="...">
+            </div>
+            <div id="ai-Rombaut" class="carousel-item ai">
+              <img src="./resources/images/AI/AI_04.jpg" id="ai-Rombaut" class="d-block" data-index="16" data-hover="ai-Rombaut" alt="...">
+            </div>
+            <div id="ai-Rombaut" class="carousel-item ai">
+              <img src="./resources/images/AI/AI_04.jpg" id="ai-Rombaut" class="d-block" data-index="17" data-hover="ai-Rombaut" alt="...">
+            </div>
+            <div id="ai-Rombaut" class="carousel-item ai">
+              <img src="./resources/images/AI/AI_04.jpg" id="ai-Rombaut" class="d-block" data-index="18" data-hover="ai-Rombaut" alt="...">
+            </div>
+            <div id="ai-Rombaut" class="carousel-item ai">
+              <img src="./resources/images/AI/AI_04.jpg" id="ai-Rombaut" class="d-block" data-index="19" data-hover="ai-Rombaut" alt="...">
+            </div>
+            <div id="ai-Experiments" class="carousel-item ai">
+              <img  src="./resources/images/AI/AI_01.png" id="ai-Experiments" class="d-block" data-index="3" data-hover="ai-Experiments" alt="...">
+            </div>
+            <div id="ai-Experiments" class="carousel-item ai">
+              <img  src="./resources/images/AI/AI_03.png" id="ai-Experiments" class="d-block" data-index="4" data-hover="ai-Experiments" alt="...">
+            </div>
+          </div>
+        </div>
+        <!-- ! Carousel CGI -->
+        <div id="carouselExampleDarkCgi" class="carousel carousel-dark" data-bs-pause="false">
+          <div class="carousel-button-container-prev">
+            <button id="prev" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDarkCgi" data-bs-slide="prev"></button>
+          </div>
+          <div class="carousel-button-container-next">
+            <button id="next" class="carousel-control-next" type="button" data-bs-target="#carouselExampleDarkCgi" data-bs-slide="next"></button>
+          </div>
+          <div class="carousel-inner">
+            <div id="cg-dmp" class="carousel-item cg active">
+              <img src="./resources/images/CGI/CGI_01.jpg" class="d-block" data-index="5" data-hover="DMP" alt="..." >
+            </div>
+            <div id="cg-dmp" class="carousel-item cg">
+              <img src="./resources/images/CGI/CGI_06.png" class="d-block" data-index="15" data-hover="DMP" alt="...">
+            </div>
+            <div id="cg-rol" class="carousel-item cg">
+              <img src="./resources/images/CGI/CGI_02.jpeg" class="d-block" data-index="6" data-hover="Rolex" alt="...">
+            </div>
+            <div id="cg-exp" class="carousel-item cg">
+              <img src="./resources/images/CGI/CGI_03.png" class="d-block" data-index="7" data-hover="Personal" alt="...">
+            </div>
+            <div id="cg-exp" class="carousel-item cg">
+              <img src="./resources/images/CGI/CGI_04.jpg" class="d-block" data-index="8" data-hover="Personal" alt="...">
+            </div>
+            <div id="cg-exp" class="carousel-item cg">
+              <img src="./resources/images/CGI/CGI_05.jpg" class="d-block" data-index="9" data-hover="Personal" alt="...">
+            </div>
+          </div>
+        </div>
+        <!-- ! Carousel PHOTO -->
+        <div id="carouselExampleDarkPhoto" class="carousel carousel-dark" data-bs-pause="false">
+          <div class="carousel-button-container-prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDarkPhoto" data-bs-slide="prev"></button>
+          </div>
+          <div class="carousel-button-container-next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDarkPhoto" data-bs-slide="next"></button>
+          </div>
+          <div class="carousel-inner pht">
+            <div id="ph-vital" class="carousel-item ph active">
+              <img src="./resources/images/PHOTO/PHOTO_01.png" class="d-block" data-index="10" data-hover="Vital Signs" alt="...">
+            </div>
+            <div id="ph-vital" class="carousel-item ph">
+              <img  src="./resources/images/PHOTO/PHOTO_02.png" class="d-block" data-index="11" data-hover="Vital Signs" alt="...">
+            </div>
+            <div id="ph-vital" class="carousel-item ph">
+              <img src="./resources/images/PHOTO/PHOTO_03.jpg" class="d-block" data-index="12" data-hover="Vital Signs" alt="...">
+            </div>
+            <div id="ph-personal" class="carousel-item ph">
+              <img src="./resources/images/PHOTO/PHOTO_04.JPG" class="d-block" data-index="13" data-hover="Personal" alt="...">
+            </div>
+            <div id="ph-personal" class="carousel-item ph">
+              <img src="./resources/images/PHOTO/PHOTO_05.JPG" class="d-block" data-index="14" data-hover="Personal" alt="...">
+            </div>
+          </div>
+        </div>
+        <!-- ! Page ABOUT -->
+        <div id="page-about" class="carousel carousel-dark container-about" data-bs-pause="false">
+          <div class="about-content"><div style="width: 14rem; height: 20rem; background-color: aqua; margin-top: 2rem; margin-left: 2rem;" ><img src="" alt=""></div><h2>This is my picture</h2></div>
+          <div class="about-content"><div style="margin-top: 2rem; margin-left: 2rem; border: 1px solid red; height: 100%;"></div></div>
+          <div class="about-content"></div>
+          <div class="about-content"></div>
+          <div class="about-content"><h4>This is additional info about me</h4></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cursors">
+      <div>
+        <div><span id="cursor-text"></span></div>
+        <div><span id="image-count"></span></div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="./highlight-menu.js"></script>
+    <script src="./cursor.js"></script>
+    <script src="./bottom-prj-descr.js"></script>
+  </body>
+</html>

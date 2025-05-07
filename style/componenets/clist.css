@@ -1,0 +1,62 @@
+/* (PART A) REMOVE BULLETS */
+.collapsible, .collapsible ol, .collapsible ul {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+/* (PART B) COLLAPSIBLE LIST CONTAINER */
+.collapsible {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+/* (PART C) CONTROL SPACING & INDENTATION */
+.collapsible ol, .collapsible ul { padding-left: 0px; }
+.toggle + ol, .toggle + ul { margin-top: 10px; }
+
+.collapsible li { 
+  padding: 10px; 
+  padding-bottom: 0;
+  padding-left: 0; 
+  font-size: 1rem;
+}
+
+/* (PART D) SHOW & HIDE CHILDREN */
+.collapsible ol, .collapsible ul { display: none; }
+.toggle.open + ol, .toggle.open + ul { display: block; }
+
+/* (PART E) ADD TOGGLE ARROW */
+.toggle { cursor: pointer; }
+.toggle::after {
+  content: "\2B";
+  font-size: 2rem; line-height: 20px; 
+  margin-left: 1rem;
+  font-weight: 400;
+  transition: all 1s;
+}
+
+.toggle.open::after{ transform: rotate(360deg); content: "\2D"}
+
+#sub-list {
+  margin: 0;
+  padding: 0;
+}
+
+#sub-list > li{
+  display: inline;
+  margin: 0;
+  padding: 0;
+  padding-left: 1rem;
+}
+
+li#head-list {
+  display: flex;
+  flex-direction: row;
+}

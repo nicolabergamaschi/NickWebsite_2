@@ -1,0 +1,245 @@
+@import url(/style/componenets/clist.css);
+@import url(/style/componenets/cursors.css);
+@import url(/style/componenets/bottom-menu.css);
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, p {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.my-name {
+  padding: 2.5rem;
+}
+
+#about {
+  text-align: end;
+}
+
+.main-container {
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.1), rgb(255, 255, 255));
+  box-shadow: 0 0 15px 15px rgba(255,255,255,0.1);
+  padding: 2rem;
+  position: fixed;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  z-index: 200;
+  align-items: end;
+}
+
+.prj-description {
+  align-self: flex-start;
+  padding: 10px;
+}
+
+.container-top-overlay {
+  height: 100%;
+  display: grid;
+}
+
+.container-top {
+  position: sticky;
+  top: 0px;
+  background: linear-gradient(to top, rgba(255,255,255,0.1), white);
+  box-shadow: 0 0 15px 15px rgba(255,255,255,0.1);
+  height: 100%;
+  display: grid;
+  grid-template-columns: 3fr 6fr 3fr;
+  z-index: 10; /* Bring it to the top */
+}
+
+.container-page {
+  height: 4rem;
+}
+
+.content-container {
+  align-content: center;
+
+}
+
+.side-pane-overlay {
+  position: relative;
+  z-index: 4;
+  justify-content: center;
+  align-content: center;
+}
+
+.container-projects {
+  text-align: center;
+}
+
+.project-description {
+  font-size: large;
+  text-align:initial;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 9rem ;
+}
+
+
+.carousel-container {
+  /*border: 6px dotted greenyellow;*/
+  width: 100%;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 20rem;
+  z-index: 5;
+  position: relative;
+  
+}
+
+.carousel {
+  background-color: beige;
+  scroll-snap-align: start;
+  /*border: 5px dotted red;*/
+  display: grid;
+  grid-template-columns: auto;
+  margin: 2rem;
+}
+
+.carousel-inner {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  height: 65rem;
+  justify-content: center;
+}
+
+.carousel-item {
+  background-color: white;
+  height: 100%; /* Ensure it inherits the height from .carousel-inner */
+  width: 100%; /* Ensure it spans the full width */
+  position: relative; /* Ensure proper positioning for child elements */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+
+.carousel-item img {
+  position: absolute; /* Position the image relative to the container */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the image fill the container's width */
+  height: 100%; /* Make the image fill the container's height */
+  object-fit: contain; /* Maintain aspect ratio and fit within the container */
+}
+
+.carousel-button-container-prev {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.carousel-button-container-next {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.carousel-control-prev {
+  width: 51%;
+  /*border: 3px dotted red;*/
+}
+
+.carousel-control-next {
+  width: 51%;
+  /*border: 3px dotted red;*/
+}
+ 
+.carousel-control-prev:hover {
+  cursor: url(../resources/images/cursors/Arrow-30x30-left.png), auto;
+}
+
+.carousel-control-next:hover {
+  cursor: url(../resources/images/cursors/Arrow-30x30-right.png), auto;
+}
+
+.about-page {
+  background-color: antiquewhite;
+  
+}
+
+.side-link-cont a{
+  color: black;
+  font-size: xx-large;
+  font-weight: 450;
+  text-decoration: none;
+}
+
+.side-link-cont a:hover{
+  color: black;
+  transition-property: font-width;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.carousel-home {
+  height: 60rem;
+}
+
+.carousel-home h1{
+  padding-top: 6rem;
+  font-size: 12rem;
+  padding-left: 7rem;
+  line-height: 14rem;
+}
+
+#page-about {
+  margin-bottom: 15rem;
+  background-color: rgb(26, 232, 78);
+  height: 60rem;
+}
+
+.container-about {
+  display: grid;
+  grid-template-rows: 3fr 1fr 1fr;
+  
+}
+
+.about-content {
+  border: 2px dotted red;
+}
+
+
+
+/* Pulsing animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(79, 241, 200, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.pulse {
+  animation: pulse 1s ease-out;
+}
+
+
+
+
+
+
