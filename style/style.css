@@ -1,6 +1,6 @@
-@import url(./componenets/clist.css);
-@import url(./componenets/cursors.css);
-@import url(./componenets/disapearing-descrip.css);
+@import url(clist.css);
+@import url(cursors.css);
+@import url(disapearing-descrip.css);
 
 body {
   margin: 0;
