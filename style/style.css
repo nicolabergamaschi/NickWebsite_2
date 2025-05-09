@@ -58,8 +58,7 @@ h1, h2, h3, h4, p {
 }
 
 .content-container {
-  height: 13rem;
-  align-content: center;
+  align-content: end;
 
 }
 
