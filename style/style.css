@@ -105,7 +105,9 @@ html {
   /*border: 5px dotted red;*/
   display: grid;
   grid-template-columns: auto;
-  margin: 4rem 2rem;
+  margin: 0px 2rem;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
 }
 
 .carousel-inner {
