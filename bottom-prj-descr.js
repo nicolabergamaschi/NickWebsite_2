@@ -36,6 +36,13 @@ function turnDescriptionsOn(locationDescriptions, carousel) {
   });
 }
 
+//! make sure the menus are off when launchin the web-page
+
+window.onload = function() {
+  turnDescriptionsOff(projectDescriptions)
+};
+
+
 //! trigger project descriptions using image click
 images.forEach(image => {
   image.addEventListener("click", function () {
