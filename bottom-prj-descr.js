@@ -39,7 +39,12 @@ function turnDescriptionsOn(locationDescriptions, carousel) {
 //! make sure the menus are off when launchin the web-page
 
 window.onload = function() {
-  turnDescriptionsOff(projectDescriptions)
+  projectDescriptions.forEach(project => {
+    const title = project.querySelector('h4.title');
+    const paragraph = project.querySelector('p.text-description');
+    title.style.display = 'none';
+    paragraph.style.display = 'none';
+  })
 };
 
 

@@ -57,7 +57,7 @@ h1, h2, h3, h4, p {
   box-shadow: 0 0 10px 10px rgba(255,255,255,0.1);
   height: 100%;
   display: grid;
-  grid-template-columns: 3fr 6fr 3fr;
+  grid-template-columns: 5fr 2fr 5fr;
   z-index: 10; /* Bring it to the top */
 }
 
