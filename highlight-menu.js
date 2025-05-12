@@ -77,6 +77,30 @@ function updateSublistHighlightFromClick(subListId) {
   }
 }
 
+// Function to update the highlight when scrolling to a project
+function updateSublistHighlightFromScroll(projectId) {
+  // Remove styles from all sublist links
+  document.querySelectorAll('.sub-list-link').forEach(link => {
+    link.style.backgroundColor = '';
+    link.style.color = '';
+    link.style.borderRadius = '';
+    link.style.padding = '';
+    link.style.margin = '';
+    link.style.fontWeight = '';
+    link.classList.remove('pulse');
+  });
+
+  // Highlight the corresponding sublist link
+  const activeLink = document.querySelector(`.sub-list-link#${projectId}`);
+  if (activeLink) {
+    activeLink.style.backgroundColor = 'rgb(125, 233, 152)';
+    activeLink.style.color = 'white';
+    activeLink.style.fontWeight = '600';
+    activeLink.style.padding = '0.1rem 0.5rem';
+    activeLink.classList.add('pulse');
+  }
+}
+
 // Add event listeners to all carousel controls
 document.querySelectorAll('.carousel').forEach(carousel => {
   const carouselId = carousel.id;

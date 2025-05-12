@@ -157,7 +157,7 @@ html {
   width: 51%;
   /*border: 3px dotted red;*/
 }
- 
+
 .carousel-control-prev:hover {
   cursor: url(../resources/images/cursors/Arrow-30x30-left.png), auto;
 }
@@ -319,6 +319,7 @@ a {
 #sub-list {
   margin: 0;
   padding: 0;
+  border-bottom: 1px dotted black;
 }
 
 #sub-list > li{
@@ -331,4 +332,9 @@ a {
 li#head-list {
   display: flex;
   flex-direction: row;
+}
+
+#cg-showReel {
+  width: 100%;
+  height: 100%;
 }

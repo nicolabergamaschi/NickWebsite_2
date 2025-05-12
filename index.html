@@ -9,16 +9,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Goggle Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <!-- CSS file -->
     
+    <!-- CSS file -->
+    <link rel="stylesheet" type="text/css" href="./style/fonts.css">
     <link rel="stylesheet" type="text/css" href="./style/normalize.css">
     <link rel="stylesheet" type="text/css" href="./style/style.css">
     <!-- JS files -->
     <link rel="preload" href="./script.js" as="script" />
-    <link rel="preload" href="./bottom-prj-descr.js" as="script" />
     <link rel="preload" href="./clist.js" as="script" />
+    <link rel="preload" href="./bottom-prj-descr.js" as="script" />
     <link rel="preload" href="./cursor.js" as="script" />
     <link rel="preload" href="./highlight-menu.js" as="script" />
 
@@ -33,17 +32,20 @@
           <ul id="menu" class="collapsible">
             <li id="head-list">
               <a href="#carouselExampleDarkAi" class="collapsible-text"><h5>Ai</h5></a>
+              <div class="toggle"></div>
               <ul id="sub-list">
                 <li><a id="ai-Vogue" class="sub-list-link" href="#carouselExampleDarkAi">Vogue</a></li>
                 <li><a id="ai-VogueBES" class="sub-list-link" href="#carouselExampleDarkAi">Vogue BES</a></li>
                 <li><a id="ai-Rombaut"class="sub-list-link" href="#carouselExampleDarkAi">Rombaut</a></li>
-                <li><a id="ai-Owens"class="sub-list-link" href="#carouselExampleDarkAi">Rick Owens</a></li>
+                <li><a id="ai-RickOwens"class="sub-list-link" href="#carouselExampleDarkAi">RickOwens</a></li>
                 <li><a id="ai-Experiments" class="sub-list-link" href="#carouselExampleDarkAi">Experiments</a></li>
               </ul>
             </li>
             <li id="head-list">
               <a href="#carouselExampleDarkCgi" class="collapsible-text"><h5>Cgi</h5></a>
+              <div class="toggle"></div>
               <ul id="sub-list">
+                <li><a id="cg-ShowReel" class="sub-list-link" href="#carouselExampleDarkCgi">Show Reel</a></li>
                 <li><a id="cg-Rolex" class="sub-list-link" href="#carouselExampleDarkCgi">Rolex</a></li>
                 <li><a id="cg-DMP" class="sub-list-link" href="#carouselExampleDarkCgi">Digital Matte</a></li>
                 <li><a id="cg-LANVIN"class="sub-list-link" href="#carouselExampleDarkCgi">Lanvin</a></li>
@@ -53,9 +55,10 @@
             </li>
             <li id="head-list">
               <a href="#carouselExampleDarkPhoto" class="collapsible-text"><h5>Photo</h5></a>
+              <div class="toggle"></div>
               <ul id="sub-list">
                 <li><a id="ph-VitalSigns" class="sub-list-link" href="#carouselExampleDarkPhoto">Vital Signs</a></li>
-                <li><a id="ph-Personal" class="sub-list-link" href="#carouselExampleDarkPhoto">Personal</a></li>
+                <li><a id="ph-Personal" class="sub-list-link" href="#carouselExampleDarkPhoto">Stills</a></li>
               </ul>
             </li>
           </ul>
@@ -73,7 +76,7 @@
             <h4 class="title" style="display: none;">Rombaut Case Study</h4>
             <p class="text-description paragraph" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti ut soluta, eos aut labore nemo impedit! Alias aut temporibus, officiis, rem iusto officia, sunt facilis quam aperiam tempore quos.</p>
           </div>
-          <div data-prj="ai-Owens">
+          <div data-prj="ai-RickOwens">
             <h4 class="title" style="display: none;">Rick Owens Case Study</h4>
             <p class="text-description paragraph" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti ut soluta, eos aut labore nemo impedit! Alias aut temporibus, officiis, rem iusto officia, sunt facilis quam aperiam tempore quos.</p>
           </div>
@@ -83,6 +86,10 @@
           </div>
           <div data-prj="cg-Experiments">
             <h4 class="title" style="display: none;">Experiments</h4>
+            <p class="text-description paragraph" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti ut soluta, eos aut labore nemo impedit! Alias aut temporibus, officiis, rem iusto officia, sunt facilis quam aperiam tempore quos.</p>
+          </div>
+          <div data-prj="cg-ShowReel">
+            <h4 class="title" style="display: none;">Show Reel 24/25</h4>
             <p class="text-description paragraph" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti ut soluta, eos aut labore nemo impedit! Alias aut temporibus, officiis, rem iusto officia, sunt facilis quam aperiam tempore quos.</p>
           </div>
           <div data-prj="cg-DMP">
@@ -176,8 +183,8 @@
             </div>
 
 
-            <div id="ai-Owens" class="carousel-item ai">
-              <img  src="./resources/images/AI/AI_21-rickowens_boots.webp" id="ai-Owens" class="d-block" data-index="62" data-hover="ai-Owens" alt="...">
+            <div id="ai-RickOwens" class="carousel-item ai">
+              <img  src="./resources/images/AI/AI_21-rickowens_boots.webp" id="ai-RickOwens" class="d-block" data-index="62" data-hover="ai-RickOwens" alt="...">
             </div>
 
             <div id="ai-Experiments" class="carousel-item ai">
@@ -217,7 +224,10 @@
             <button id="next" class="carousel-control-next" type="button" data-bs-target="#carouselExampleDarkCgi" data-bs-slide="next"></button>
           </div>
           <div class="carousel-inner">
-            <div id="cg-DMP" class="carousel-item cg active">
+            <div id="cg-ShowReel" class="carousel-item cg active">
+              <iframe id="cg-ShowReel" data-hover="cg-ShowReel" data-index="200" src="https://player.vimeo.com/video/1034925899?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="100%" height="100%" frameborder="1" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Show Reel 2024-2025"></iframe>
+            </div>
+            <div id="cg-DMP" class="carousel-item cg">
               <img src="./resources/images/CGI/CGI_01.webp" id="cg-DMP" class="d-block" data-index="8" data-hover="cg-DMP" alt="..." >
             </div>
             <div id="cg-DMP" class="carousel-item cg">

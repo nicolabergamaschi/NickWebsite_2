@@ -4,6 +4,8 @@ const mainMenu = document.querySelectorAll('li#head-list') // array with all hea
 const allImages = document.querySelectorAll('.carousel-inner'); // array with all of the divs containing images from carousels
 
 const headList = document.querySelectorAll('ul#sub-list li') // array with all headlist element for the projects menu
+const toggleElements = document.querySelectorAll('div.toggle');
+
 
 function isElementInViewport(element) {
   const area = element.getBoundingClientRect();
@@ -34,6 +36,16 @@ function turnDescriptionsOn(locationDescriptions, carousel) {
       paragraph.style.display = 'block';
     }
   });
+}
+function openCategoryMenus(elementToOpen) {
+  elementToOpen.forEach(element => {
+    element.classList.add('open');
+  });
+}
+function closeCategoryMenus(elementToClose) {
+  elementToClose.forEach(element => {
+    element.classList.remove('open');
+  })
 }
 
 //! make sure the menus are off when launchin the web-page
@@ -79,7 +91,14 @@ headList.forEach(sublist => {
   })
 })
 
-//! trigger project descriptions using category button click
+//! changing highlighted project based on scrolling
+function changeHighligthedPrjOnScroll(carousel) {
+  const activeItem = carousel.querySelector('.carousel-item.active');
+  if (activeItem) {
+    const activePrjId = activeItem.id;
+    updateSublistHighlightFromScroll(activePrjId); // Use the new function
+  }
+}
 
 
 //! enable/disable descriptions while scrolling between projects and update it if scrolling to a different category
@@ -92,25 +111,34 @@ window.addEventListener('scroll', function() {
   const aboutCarousel = document.querySelector('div#page-about');
 
   if (isElementInViewport(homeCarousel)) {
-    console.log('Home carousel is in the viewport');
+    /*console.log('Home carousel is in the viewport');*/
     turnDescriptionsOff(projectDescriptions);
+    closeCategoryMenus(toggleElements);
 
   } else if (isElementInViewport(aiCarousel)) {
-    console.log('Ai carousel is in the viewport')
+    /*console.log('Ai carousel is in the viewport')*/
     turnDescriptionsOn(projectDescriptions, aiCarousel)
-    
+    openCategoryMenus(toggleElements)
+    changeHighligthedPrjOnScroll(aiCarousel)
+
   } else if (isElementInViewport(cgiCarousel)) {
-    console.log('Cgi carousel is in the viewport')
+    /*console.log('Cgi carousel is in the viewport')*/
     turnDescriptionsOn(projectDescriptions, cgiCarousel)
+    openCategoryMenus(toggleElements)
+    changeHighligthedPrjOnScroll(cgiCarousel)
 
   } else if (isElementInViewport(phtCarousel)) {
-    console.log('Photo carousel is in the viewport')
+    /*console.log('Photo carousel is in the viewport');*/
     turnDescriptionsOn(projectDescriptions, phtCarousel)
+    openCategoryMenus(toggleElements)
+    changeHighligthedPrjOnScroll(phtCarousel)
 
   } else if (isElementInViewport(aboutCarousel)) {
-    console.log('About carousel is in the viewport')
+    /*console.log('About carousel is in the viewport');*/
     turnDescriptionsOff(projectDescriptions);
+    closeCategoryMenus(toggleElements);
+
   } else {
-    console.log('Unusual carousel in the viewport!!')
+    /*console.log('Unusual carousel in the viewport!!');*/
   }
 })
