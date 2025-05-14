@@ -31,6 +31,7 @@ h1, h2, h3, h4, p {
   bottom: 0;
   display: grid;
   grid-template-columns: 6fr 6fr;
+  grid-template-rows: 6fr 6fr;
   z-index: 200;
   align-items: end;
 }
@@ -112,7 +113,7 @@ html {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
-  height: 58rem;
+  height: 100vh;
   justify-content: center;
 }
 
