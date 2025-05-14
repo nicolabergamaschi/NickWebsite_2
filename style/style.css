@@ -99,7 +99,7 @@ html {
 }
 
 .carousel {
-  background-color: beige;
+  /*background-color: beige;*/
   scroll-snap-align: start;
   /*border: 5px dotted red;*/
   display: grid;

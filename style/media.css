@@ -1,0 +1,110 @@
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+
+  .carousel-home h1{
+    font-size: 8rem;
+    padding: 3rem;
+    line-height: 10rem;
+  }
+
+  .carousel-inner {
+    height: 70rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .content-container {
+  height: 12rem;
+  grid-column: 2;
+  grid-row: 1;
+
+}
+
+.prj-description {
+  padding: 0px 10px;
+  grid-column: 1;
+}
+}
+
+/* Styles for devices with a max width of 1024px (e.g., small desktops) */
+@media (max-width: 1024px) {
+  html {
+    font-size: 10px;
+  }
+
+  .carousel-home h1{
+    font-size: 8rem;
+    padding: 3rem;
+    line-height: 10rem;
+  }
+
+  .carousel-inner {
+    height: 70rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  #page-about {
+  margin-bottom: 15rem;
+  background-color: rgb(232, 26, 64);
+  height: 80rem;
+  }
+}
+
+/* Styles for devices with a min width of 1201px (e.g., large desktops) */
+@media (max-width: 1201px) {
+
+  html {
+    font-size: 12px;
+  }
+
+  .carousel-home {
+
+  }
+
+  .carousel-container {
+    gap: 40rem;
+  }
+
+  .carousel-inner {
+    height: 55rem;
+
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  #page-about {
+  margin-bottom: 15rem;
+  background-color: rgb(26, 232, 78);
+  height: 80rem;
+  }
+}
+
+/* Styles for devices with a min width of 1201px (e.g., large desktops) */
+@media (min-width: 1201px) and (max-width: 1560px) {
+
+  html {
+    font-size: 12px;
+  }
+
+  .carousel-home {
+
+  }
+
+  .carousel-inner {
+    height: 55rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
