@@ -1,284 +1,278 @@
-@media (max-width: 414px) {
+@media (max-width: 414px) and (max-height: 900px) {
+    html {
+        font-size: 10px;
+    }
 
-  html {
-    font-size: 10px;
-  }
+    .carousel-home h1 {
+        padding-top: 8rem;
+        padding-right: 4rem;
+        font-size: 4.4rem;
+        padding-left: 4rem;
+        line-height: 5rem;
+    }
 
-  .carousel-home h1{
-  padding-top: 8rem;
-  padding-right: 4rem;
-  font-size: 4.4rem;
-  padding-left: 4rem;
-  line-height: 5rem;
-  }
+    .carousel-inner {
+        height: 37rem;
+        margin-top: 1em;
+    }
 
-  .carousel-inner {
-    height: 50rem;
-  }
+    .container {
+        padding: 10px;
+    }
 
-  .container {
-    padding: 10px;
-  }
+    #page-about {
+        margin-bottom: 15rem;
+        background-color: rgb(26, 232, 78);
+        height: 55rem;
+    }
 
-  #page-about {
-  margin-bottom: 15rem;
-  background-color: rgb(26, 232, 78);
-  height: 55rem;
-  }
+    #sub-list {
+        margin: 0;
+        padding: 0;
+        border-bottom: 0px solid black;
+    }
 
-  #sub-list {
-  margin: 0;
-  padding: 0;
-  border-bottom: 0px solid black;
-  }
+    .overlay {
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(255,255,255,0.1), rgb(255, 255, 255));
+        box-shadow: 0 0 15px 15px rgba(255,255,255,0.1);
+        padding: 2.5rem;
+        margin-bottom: 4rem;
+        padding-bottom: 2rem;
+        padding-top: 0;
+        position: fixed;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        grid-template-rows: 6fr 3fr;
+        z-index: 200;
+        align-items: end;
+        column-gap: 13px;
+        row-gap: 32px;
+        grid-template-areas: '. .' 'prev .';
+    }
 
-  .overlay {
-  width: 100%;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.1), rgb(255, 255, 255));
-  box-shadow: 0 0 15px 15px rgba(255,255,255,0.1);
-  padding: 2.5rem;
-  margin-bottom: 4rem;
-  padding-bottom: 2rem;
-  padding-top: 0;
-  position: fixed;
-  bottom: 0;
-  display: grid;
-  grid-template-columns: 6fr 6fr;
-  grid-template-rows: 6fr 6fr;
-  z-index: 200;
-  align-items: end;
-  }
+    .content-container {
+        grid-column: 2;
+        grid-row: 1;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
 
-  .content-container {
-  grid-column: 2;
-  grid-row: 1;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  }
+    .prj-description {
+        grid-column: 1;
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding-left: 0;
+        padding-right: 1rem;
+    }
 
-  .prj-description {
-    grid-column: 1;
-    grid-row: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    padding-left: 0;
-    padding-right: 1rem;
-  }
+    #head-list {
+        padding-right: 0;
+        padding-top: 0.5rem;
+    }
 
-  #head-list {
-    padding-right: 0;
-    padding-top: 0.5rem;
-  }
+    h5 {
+        margin-top: 0.5rem;
+    }
 
-  h5 {
-    margin-top: 0.5rem;
-  }
+    div.toggle::after {
+        margin-bottom: 1rem;
+    }
 
-  div.toggle::after {
-    margin-bottom: 1rem;
-  }
+    #sub-list {
+        line-height: 1.7rem;
+    }
 
-  #sub-list {
-    line-height: 1.7rem;
-  }
+    #rev {
+        position: fixed;
+        bottom: 0;
+        height: 4rem;
+    }
 
-  #rev {
-    position: fixed;
-    bottom: 0;
-    height: 4rem;
-  }
-
-  .carousel-button-container-next {
-    
-  }
+    .carousel-button-container-next {
+    }
 }
 
 @media (min-width: 415px) and (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
 
-  html {
-    font-size: 10px;
-  }
+    .carousel-home h1 {
+        padding-top: 2rem;
+        font-size: 5rem;
+        padding-left: 4rem;
+        line-height: 6rem;
+    }
 
-  .carousel-home h1{
-  padding-top: 2rem;
-  font-size: 5rem;
-  padding-left: 4rem;
-  line-height: 6rem;
-  }
+    .carousel-inner {
+        height: 55rem;
+    }
 
-  .carousel-inner {
-    height: 55rem;
-  }
+    .container {
+        padding: 10px;
+    }
 
-  .container {
-    padding: 10px;
-  }
+    #page-about {
+        margin-bottom: 15rem;
+        background-color: rgb(26, 232, 78);
+        height: 55rem;
+    }
 
-  #page-about {
-  margin-bottom: 15rem;
-  background-color: rgb(26, 232, 78);
-  height: 55rem;
-  }
+    #sub-list {
+        margin: 0;
+        padding: 0;
+        border-bottom: 0px solid black;
+    }
 
-  #sub-list {
-  margin: 0;
-  padding: 0;
-  border-bottom: 0px solid black;
-  }
+    .overlay {
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(255,255,255,0.1), rgb(255, 255, 255));
+        box-shadow: 0 0 15px 15px rgba(255,255,255,0.1);
+        padding: 2.5rem;
+        padding-bottom: 1rem;
+        padding-top: 0;
+        position: fixed;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        grid-template-rows: 6fr 6fr;
+        z-index: 200;
+        align-items: end;
+    }
 
-  .overlay {
-  width: 100%;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.1), rgb(255, 255, 255));
-  box-shadow: 0 0 15px 15px rgba(255,255,255,0.1);
-  padding: 2.5rem;
-  padding-bottom: 1rem;
-  padding-top: 0;
-  position: fixed;
-  bottom: 0;
-  display: grid;
-  grid-template-columns: 6fr 6fr;
-  grid-template-rows: 6fr 6fr;
-  z-index: 200;
-  align-items: end;
-  }
+    .content-container {
+        grid-column: 2;
+        grid-row: 1;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
 
-  .content-container {
-  grid-column: 2;
-  grid-row: 1;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  }
+    .prj-description {
+        grid-column: 1;
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding-left: 0;
+        padding-right: 1rem;
+    }
 
-  .prj-description {
-    grid-column: 1;
-    grid-row: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    padding-left: 0;
-    padding-right: 1rem;
-  }
+    #head-list {
+        padding-right: 0;
+        padding-top: 0.5rem;
+    }
 
-  #head-list {
-    padding-right: 0;
-    padding-top: 0.5rem;
-  }
+    h5 {
+        margin-top: 0.5rem;
+    }
 
-  h5 {
-    margin-top: 0.5rem;
-  }
+    div.toggle::after {
+        margin-bottom: 1rem;
+    }
 
-  div.toggle::after {
-    margin-bottom: 1rem;
-  }
-
-  #sub-list {
-    line-height: 1.7rem;
-  }
+    #sub-list {
+        line-height: 1.7rem;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
+    html {
+        font-size: 12px;
+    }
 
-  html {
-    font-size: 12px;
-  }
+    .carousel-home h1 {
+        padding-top: 2rem;
+        font-size: 7rem;
+        padding-left: 4rem;
+        line-height: 9rem;
+    }
 
-  .carousel-home h1{
-  padding-top: 2rem;
-  font-size: 7rem;
-  padding-left: 4rem;
-  line-height: 9rem;
-  }
+    .carousel-inner {
+        height: 55rem;
+    }
 
-  .carousel-inner {
-    height: 55rem;
-  }
+    .container {
+        padding: 10px;
+    }
 
-  .container {
-    padding: 10px;
-  }
+    #page-about {
+        margin-bottom: 15rem;
+        background-color: rgb(26, 232, 78);
+        height: 55rem;
+    }
 
-  #page-about {
-  margin-bottom: 15rem;
-  background-color: rgb(26, 232, 78);
-  height: 55rem;
-  }
-
-  #sub-list {
-  margin: 0;
-  padding: 0;
-  border-bottom: 0px solid black;
-  }
+    #sub-list {
+        margin: 0;
+        padding: 0;
+        border-bottom: 0px solid black;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1560px) {
+    html {
+        font-size: 12px;
+    }
 
-  html {
-    font-size: 12px;
-  }
+    .carousel-home {
+    }
 
-  .carousel-home {
+    .carousel-inner {
+        height: 55rem;
+    }
 
-  }
+    .container {
+        padding: 10px;
+    }
 
-  .carousel-inner {
-    height: 55rem;
-  }
+    #page-about {
+        margin-bottom: 15rem;
+        background-color: rgb(26, 232, 78);
+        height: 55rem;
+    }
 
-  .container {
-    padding: 10px;
-  }
-
-  #page-about {
-  margin-bottom: 15rem;
-  background-color: rgb(26, 232, 78);
-  height: 55rem;
-  }
-
-  #sub-list {
-  margin: 0;
-  padding: 0;
-  border-bottom: 0px solid black;
-  }
+    #sub-list {
+        margin: 0;
+        padding: 0;
+        border-bottom: 0px solid black;
+    }
 }
 
-
-
 @media (min-width: 1560px) and (max-width: 1920px) {
+    html {
+        font-size: 12px;
+    }
 
-  html {
-    font-size: 12px;
-  }
+    .carousel-home {
+    }
 
-  .carousel-home {
+    .carousel-inner {
+        height: 55rem;
+    }
 
-  }
+    .container {
+        padding: 10px;
+    }
 
-  .carousel-inner {
-    height: 55rem;
-  }
+    #page-about {
+        margin-bottom: 15rem;
+        background-color: rgb(26, 232, 78);
+        height: 55rem;
+    }
 
-  .container {
-    padding: 10px;
-  }
-
-  #page-about {
-  margin-bottom: 15rem;
-  background-color: rgb(26, 232, 78);
-  height: 55rem;
-  }
-
-  #sub-list {
-  margin: 0;
-  padding: 0;
-  border-bottom: 0px solid black;
-  }
+    #sub-list {
+        margin: 0;
+        padding: 0;
+        border-bottom: 0px solid black;
+    }
 }
 
